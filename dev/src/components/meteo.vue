@@ -2,16 +2,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-6 offset-3" id="input">
-                <form action="">
-                <input type="search" name="city" id="city">
-                <button onclick="citymeteo()">My weather</button>
+                <form @submit="submitcity">
+                <input type="search" name="city" id="city" v-model="message" placeholder="modifiez-moi">
+                <button type="submit" >My weather</button>
+                <p>Le message est : {{ message }}</p>
                 </form>
             </div>
         </div>
         <div class="row">
             <div class="col-10 offset-1" id="affich">
                 <div id="meteo-semaine">
-
+                         {{ info }}
                 </div>
             </div>
         </div>
@@ -19,12 +20,20 @@
 </template>
 
 <script>
-export default {
-  name: 'meteo',
-  props: {
-    msg: String
+ import axios from 'axios'
+new Vue({
+  el: '#meteo-semaine',
+  data () {
+    return {
+      info: null
+    }
+  },
+  mounted () {
+    axios
+      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      .then(response => (this.info = response))
   }
-}
+})
 
 </script>
 
@@ -33,7 +42,6 @@ export default {
     #input {
         height: auto;
         width: 100%;
-        background-color: aqua;
     }
     button, #city {
         width: 100%;
@@ -41,9 +49,9 @@ export default {
     form {
         margin: 30px 0px 30px 0px;
     }
-    #affich {
+    #meteo-semaine {
         height: 60px;
-        width: 100%;    
+        width: 100%;
         background-color: blueviolet;
     }
 </style>
