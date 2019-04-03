@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
     <h1>Bitcoin Price Index</h1>
     <div v-for="currency in info" class="currency">
@@ -11,8 +12,7 @@
 </template>
 
 <script>
-  import axios from 'axios'
-
+ import axios from 'axios'
   export default {
     data () {
       return {
