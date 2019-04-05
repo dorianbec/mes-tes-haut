@@ -10,7 +10,7 @@ Un site pour rechercher la meteo dans toutes les villes du monde sur 5 jours ;-)
 
 Réalisé entre le 2 et le 5 mars 2019 en tant que stagiaire @ BeCode
 
-##Par
+## Par
 
 + Mona Marchetti
 + Dorian Vanderheyden
@@ -28,7 +28,7 @@ Réalisé entre le 2 et le 5 mars 2019 en tant que stagiaire @ BeCode
 
 ## Api utilisé :
 
-+ api.openweathermap.org
++ api.<openweathermap.org>
 
 ## Progression :
 
