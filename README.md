@@ -26,7 +26,7 @@ Réalisé entre le 2 et le 5 mars 2019 en tant que stagiaire @ BeCode
 + Bootstrap
 + vue.js
 
-##api utilisé :
+## Api utilisé :
 
 + api.openweathermap.org
 
