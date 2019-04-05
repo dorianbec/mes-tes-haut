@@ -28,7 +28,7 @@ Réalisé entre le 2 et le 5 mars 2019 en tant que stagiaire @ BeCode
 
 ## Api utilisé :
 
-+ api.<openweathermap.org>
++ api.openweathermap.org
 
 ## Progression :
 
