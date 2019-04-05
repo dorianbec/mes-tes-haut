@@ -1,0 +1,11 @@
+.jour {
+    background-image: url(../img/jour.png);
+    background-size: cover;
+    
+}
+.nuit {
+    background-image: url(../img/nuit.png);
+    background-size: cover;
+    
+}
+
