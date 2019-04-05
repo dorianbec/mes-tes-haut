@@ -33,7 +33,7 @@ lien github page : <https://dorianbec.github.io/mes-tes-haut/>
 
 ## Aperçu du site :
 
-![Apercu du site](assets/img/mes-tes-haut.png)
+![Apercu du site](img/mes-tes-haut.png)
 
 ## Crédits photos :
 
